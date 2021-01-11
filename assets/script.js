@@ -3,6 +3,8 @@ const menu = document.querySelector('.con-menu')
 const contents = document.querySelector('.con-contents')
 const links = document.querySelector('.con-contents .con-links')
 const posts = document.querySelector('.con-contents .con-posts')
+
+
 window.addEventListener("load", function(event) {
     const vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
@@ -41,8 +43,3 @@ contents.addEventListener('scroll', (evt) => {
         menu.querySelector('button:nth-child(3)').classList.add('active')
     }
 })
-
-
-  
-
-
