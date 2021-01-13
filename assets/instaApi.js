@@ -12,8 +12,8 @@ async function fetchLatestPosts (profileId){
     else{
         console.log(`${profileId} has public id`);
     }
-    // const latest =data.graphql.user.profile_pic_url_hd;
-    const latest = "assets/shuvo.jpg"
+    const latest =data.graphql.user.profile_pic_url_hd;
+    // const latest = "assets/shuvo.jpg"
     return latest;
 }
 
