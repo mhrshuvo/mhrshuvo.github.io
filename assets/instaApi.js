@@ -26,6 +26,7 @@ async function creatGallery (profileId){
 
     
     user.innerHTML += `
+    <div class="title">
                 <h1>
                     @mhrshuvo
                 </h1>
