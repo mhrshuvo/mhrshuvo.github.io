@@ -1,5 +1,3 @@
-
-
 async function fetchLatestPosts (profileId){
     const responce = await fetch(`https://www.instagram.com/${profileId}/?__a=1`);
     const data     = await responce.json();
@@ -12,26 +10,35 @@ async function fetchLatestPosts (profileId){
     else{
         console.log(`${profileId} has public id`);
     }
-    const latest =data.graphql.user.profile_pic_url_hd;
-    // const latest = "assets/shuvo.jpg"
+    const latest =data.graphql.user.profile_pic_url;
     return latest;
 }
 
 async function creatGallery (profileId){
-    const thumbnils = await fetchLatestPosts(profileId);
+    const proPic = await fetchLatestPosts(profileId);
 
     const container    = document.createElement('div');
-          container.id = 'avatar';
+    container.className = 'avatar';
+    const img = document.createElement('img')
+    img.src = proPic
+    container.appendChild(img)
+    user.appendChild(container)
 
     
-        const img     = document.createElement('img');
-              img.src = thumbnils;
-        container.appendChild(img);
-        user.appendChild(container);
+    user.innerHTML += `
+                <h1>
+                    @mhrshuvo
+                </h1>
+                <p>
+                    Web 💻 and Mobile APP 📱 interface designer <br>
+                    UI/UX engineer
+                </p>
+            </div>
+                       `
+
 }
 
-function getImg () {
-   
+window.onload = ()=> {
     creatGallery("mhrshuvoo");
 };
 
