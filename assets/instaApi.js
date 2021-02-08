@@ -40,7 +40,7 @@ async function creatGallery (profileId){
 }
 
 window.onload = ()=> {
-    creatGallery("mhrshuvoo");
+    creatGallery("mhrshuvo");
 };
 
 
