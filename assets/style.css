@@ -234,6 +234,15 @@ body {
     z-index: 10;
     color: #fff;
 }
+
+.www{
+    width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+    background-image: url(Icons/www.svg);
+}
 .con-links a span {
     text-align: center;
 }
