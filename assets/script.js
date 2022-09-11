@@ -29,15 +29,17 @@ function handleClick(evt, name) {
     contents.scrollTo(elScroll.offsetLeft, 0)
 }
 
-contents.addEventListener('scroll', (evt) => {
-    if (evt.target.scrollLeft > window.innerWidth / 2 && evt.target.scrollLeft < window.innerWidth + (window.innerWidth / 2)) {
-        menu.querySelector('button:nth-child(1)').classList.remove('active')
-        menu.querySelector('button:nth-child(2)').classList.add('active')
-    } else if (evt.target.scrollLeft < window.innerWidth / 2) {
-        menu.querySelector('button:nth-child(1)').classList.add('active')
-        menu.querySelector('button:nth-child(2)').classList.remove('active')
-    } else if (evt.target.scrollLeft > window.innerWidth + (window.innerWidth / 2)) {
-        menu.querySelector('button:nth-child(2)').classList.remove('active')
-        menu.querySelector('button:nth-child(3)').classList.add('active')
-    }
-})
+// contents.addEventListener('scroll', (evt) => {
+//     if (evt.target.scrollLeft > window.innerWidth / 2 && evt.target.scrollLeft < window.innerWidth + (window.innerWidth / 2)) {
+//         menu.querySelector('button:nth-child(1)').classList.remove('active')
+//         menu.querySelector('button:nth-child(2)').classList.add('active')
+//     } 
+//     else if (evt.target.scrollLeft < window.innerWidth / 2) {
+//         menu.querySelector('button:nth-child(1)').classList.add('active')
+//         menu.querySelector('button:nth-child(2)').classList.remove('active')
+//     } 
+//     else if (evt.target.scrollLeft > window.innerWidth + (window.innerWidth / 2)) {
+//         menu.querySelector('button:nth-child(2)').classList.remove('active')
+//         menu.querySelector('button:nth-child(3)').classList.add('active')
+//     }
+// })

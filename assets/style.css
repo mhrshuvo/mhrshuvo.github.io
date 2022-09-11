@@ -27,6 +27,8 @@ body {
     overflow: hidden;
 }
 .con-user {
+     background: hsl(0, 100%, 100%);  
+   
     padding-top: 10px;
     width: 100%;
     position: relative;
@@ -34,10 +36,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #fff;
+    
     padding-bottom: 10px;
     border-radius: 0px 0px 40px 0px;
 }
+
+
 .con-user .title {
     text-align: center;
     width: 100%;
